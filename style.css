@@ -1,0 +1,210 @@
+/***************************** General *************************************/
+
+/* @font-face
+{
+    font-family: 'Gilroy';
+    src: url('Gilroy/Gilroy-Black.woff') format('truetype');
+} */
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+/***************************** Header *************************************/
+
+header
+{
+    background-image: url('images/header_banner.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 500px;
+}
+
+
+/******* Navbar ********/
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+}
+
+.navbar ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navbar ul li
+{
+    list-style: none;
+    padding: 0 20px;
+}
+
+.navbar ul li a
+{
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbar__shop
+{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.navbar__cart
+{
+    position: relative;
+}
+
+.navbar__cart--count
+{
+    background-color: #E58411;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 5px 5px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.navbar__mobile-button
+{
+    display: none;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar__mobile-menu--inactive
+{
+    display: none;
+}
+
+.navbar__mobile-menu--active
+{
+    display: block;
+}
+
+@media screen and (max-width: 768px)
+{
+    .navbar__mobile-button
+    {
+        display: block;
+    }
+
+    .navbar nav
+    {
+        display: none;
+    }
+
+    #mobile-menu ul
+    {
+        background-color: #F7F7F7;
+        opacity: 0.8;
+    }
+
+    #mobile-menu ul li
+    {
+        list-style: none;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #mobile-menu ul li a
+    {
+        font-size: 24px;
+        color: #000000;
+        font-weight: 900;
+        text-decoration: none;
+    }
+}
+
+/******* Banner ********/
+.banner
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__main-text
+{
+    font-size: 80px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.banner__sub-text
+{
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-weight: 300;
+    padding: 30px 0;
+}
+
+.banner__search
+{
+    position: relative;
+}
+
+.banner__search--field
+{
+    font-size: 18px;
+    padding: 20px;
+    border: 0.86px solid rgba(255, 255, 255, 0.6);
+    border-radius: 42px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.banner__search--field::placeholder
+{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.banner__search--button
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #E58411;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px)
+{
+    .banner__main-text
+    {
+        font-size: 32px;
+    }
+
+    .banner__sub-text
+    {
+        font-size: 18px;
+    }
+}
+
+/***************************** Main *************************************/
+
+/**************************** Footer ************************************/
