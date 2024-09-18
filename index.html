@@ -28,7 +28,14 @@
 
             <nav class="navbar__pc-menu">
                 <ul>
-                    <li><a href="#">Furniture <img src="images/down_arrow.png" alt="Down Arrow"></a></li>
+                    <li><a href="#">Furniture <img src="images/down_arrow.png" alt="Down Arrow"></a>
+                        <!-- <ul class="navbar__mobile-menu--sub-menu--inactive">
+                            <li><a href="#">Table</a></li>
+                            <li><a href="#">Chair</a></li>
+                            <li><a href="#">Sofa</a></li>
+                            <li><a href="#">Bed</a></li>
+                        </ul> -->
+                    </li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
@@ -43,9 +50,17 @@
 
         <!-- Mobile Menu -->
         <div class="navbar__menu-div">
-            <nav id="mobile-menu" class="navbar__mobile-menu--inactive">
+            <nav class="navbar__mobile-menu navbar__mobile-menu--inactive">
                 <ul>
-                    <li><a href="#">Furniture <em class="fa fa-caret-down"></em></a></li>
+                    <li><a href="#">Furniture <em class="fa fa-caret-down"></em></a>
+                        <!-- <ul class="navbar__mobile-menu--sub-menu--inactive">
+                            <li><a href="#">Table</a></li>
+                            <li><a href="#">Chair</a></li>
+                            <li><a href="#">Sofa</a></li>
+                            <li><a href="#">Bed</a></li>
+                        </ul> -->
+                    </li>
+                    
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
@@ -131,14 +146,65 @@
 
     <!-- Footer -->
     <footer>
-        <div>
+        <div class="footer__content">
+            <div class="footer__main-content">
+                <h2>Panto</h2>
+                <p>The advantage of hiring a workspace with <br>us is that givees you comfortable service <br>and all-around facilities.</p>
+            </div>
 
+            <div class="footer__links">
+                <div class="footer__sub-content">
+                    <h3>
+                        Services
+                    </h3>
+                    <ul>
+                        <li><a href="#">Email Marketing</a></li>
+                        <li><a href="#">Campaigns</a></li>
+                        <li><a href="#">Branding</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__sub-content">
+                    <h3>
+                        Furniture
+                    </h3>
+                    <ul>
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Chairs</a></li>
+                        <li><a href="#">All</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__sub-content">
+                    <h3>
+                        Follow Us
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#" style="padding: 0 0 0 10px;">
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div>
+        <div class="footer__extra">
             <p>Copyright &copy; 2021</p>
-            <div>
-
+            <div class="footer__extra--conditions">
+                <span>Terms & Conditions</span>
+                <span>Privacy Policy</span>
             </div>
         </div>
     </footer>
