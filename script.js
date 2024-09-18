@@ -8,6 +8,14 @@ document.querySelector('.navbar__mobile-button').addEventListener('click', funct
     document.querySelector('#mobile-menu').classList.toggle('navbar__mobile-menu--inactive');
 });
 
+// jQuery
+// $(document).ready(function() {
+//     $('.navbar__mobile-button').click(function() {
+//         clickCount++;
+//         $('.navbar__menu-div').slideToggle(500);
+//     });
+// });
+
 // Window Resize
 window.addEventListener("resize", function (e) {
     let width = window.innerWidth;

@@ -32,7 +32,7 @@ header
     width: 100%;
 }
 
-.navbar ul
+.navbar__pc-menu ul
 {
     display: flex;
     justify-content: space-between;
@@ -40,13 +40,13 @@ header
     padding: 20px 0;
 }
 
-.navbar ul li
+.navbar__pc-menu ul li
 {
     list-style: none;
     padding: 0 20px;
 }
 
-.navbar ul li a
+.navbar__pc-menu ul li a
 {
     font-size: 18px;
     text-decoration: none;
@@ -54,7 +54,7 @@ header
     margin: 0 15px;
 }
 
-.navbar ul li a img
+.navbar__pc-menu ul li a img
 {
     padding: 0 10px;
 }
@@ -84,6 +84,12 @@ header
     right: -5px;
 }
 
+.navbar__menu-div
+{
+    display: none;
+    position: relative;
+}
+
 .navbar__mobile-button
 {
     display: none;
@@ -104,6 +110,40 @@ header
     display: block;
 }
 
+#mobile-menu
+{
+    background-color: #f7f7f7;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    top: -35px;
+    left: 5%;
+    width: 90%;
+}
+
+#mobile-menu ul
+{
+    background-color: #f7f7f7;
+}
+
+#mobile-menu ul li
+{
+    list-style: none;
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid #E58411;
+    margin: -1px 0 0 0;
+}
+
+#mobile-menu ul li a
+{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 900;
+    text-decoration: none;
+    width: 100%;
+}
+
 nav a:hover, a:hover
 {
     color: #E58411;
@@ -111,36 +151,20 @@ nav a:hover, a:hover
 
 @media screen and (max-width: 768px)
 {
+    .navbar__menu-div
+    {
+        display: block;
+    }
+
     .navbar__mobile-button
     {
         display: block;
     }
 
-    .navbar nav
+    .navbar__pc-menu
     {
         display: none;
-    }
-
-    #mobile-menu ul
-    {
-        background-color: #F7F7F7;
-        opacity: 0.8;
-    }
-
-    #mobile-menu ul li
-    {
-        list-style: none;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    #mobile-menu ul li a
-    {
-        font-size: 20px;
-        color: #000000;
-        font-weight: 900;
-        text-decoration: none;
-    }
+    } 
 }
 
 /******* Banner ********/
@@ -203,7 +227,7 @@ nav a:hover, a:hover
 {
     position: absolute;
     left: 60%;
-    transform: translate(27%, 20%);
+    transform: translate(27%, 25%);
     
     background-color: #E58411;
     color: #FFFFFF;
@@ -254,19 +278,26 @@ nav a:hover, a:hover
     .banner__search--button
     {
         left: 65%;
-        transform: translate(27%, 12%);
+        transform: translate(27%, 17%);
         font-size: 12px;
     }
 }
 
 @media screen and (max-width: 580px)
 {
+
+    .banner__sub-text
+    {
+        width: 90%;
+    }
+
     .banner__search
     {
         position: static;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 90%;
     }
 
     .banner__search--field
@@ -425,3 +456,9 @@ nav a:hover, a:hover
 }
 
 /**************************** Footer ************************************/
+footer
+{
+    background-color: rgba(247, 247, 247, 1);
+    ;
+    padding: 40px;
+}
