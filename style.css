@@ -746,6 +746,173 @@ header
     }
 }
 
+/********** Testimonials ********/
+
+.testimonials
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.testimonials__content--heading
+{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 21.09px;
+    letter-spacing: 0.175em;
+    color: rgba(229, 132, 17, 1);
+}
+
+.testimonials__content--main-text
+{
+    font-size: 42px;
+    text-align: center;
+    color: rgba(30, 30, 30, 1);
+    padding: 20px 0;
+}
+
+.testimonials__slider
+{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    width: 100%;
+}
+
+.testimonials__container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+
+.testimonials__container--main-pic
+{
+    width: 100%;
+    filter: drop-shadow(0px 5px 5px gray);
+}
+
+.testimonials__content
+{
+    position: absolute;
+    width: 75%;
+    height: auto;
+    bottom: 10%;
+    left: 12.5%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 18.12px;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials__client--name
+{
+    color: rgba(30, 30, 30, 1);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+.testimonials__client--title
+{
+    font-size: 12px;
+    line-height: 14.06px;
+    text-align: center;
+    color: rgba(30, 30, 30, 0.6);
+}
+
+.testimonials__client--review
+{
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: center;
+    color: rgba(30, 30, 30, 0.8);
+    padding: 20px 0 0 0;
+}
+
+.testimonials__client--rating
+{
+    padding: 20px 0;
+}
+
+.testimonials__client--pic
+{
+    position: absolute;
+    top: -30px;
+    left: -25.5px;
+    filter: drop-shadow(0px 5px 5px gray);
+}
+
+.testimonials__content--pic
+{
+    position: relative;
+}
+
+.testimonials__white-circle
+{
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    top: -35px;
+    left: -35px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.splide__arrow
+{
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 7.03px 19.53px 0px rgba(0, 0, 0, 0.06);
+    opacity: 1;
+    top: 35%;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 990px)
+{
+    .testimonials__container
+    {
+        width: 50%;
+    }
+
+    .testimonials__content--main-text
+    {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .testimonials
+    {
+        padding: 20px 0;
+    }
+
+    .testimonials__content--main-text
+    {
+        font-size: 24px;
+    }
+
+    .testimonials__container
+    {
+        width: 100%;
+    }
+}
+
 /**************************** Footer ************************************/
 footer
 {

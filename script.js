@@ -1,4 +1,4 @@
-// Mobile menu
+///////////////// Mobile menu ///////////////////////
 
 let clickCount = 0;
 document.querySelector('.navbar__mobile-button').addEventListener('click', function() {
@@ -16,7 +16,7 @@ document.querySelector('.navbar__mobile-button').addEventListener('click', funct
 //     });
 // });
 
-// Window Resize
+/////////////// Window Resize ///////////////////////
 window.addEventListener("resize", function (e) {
     let width = window.innerWidth;
     console.log(width);
@@ -36,4 +36,24 @@ window.addEventListener("resize", function (e) {
         document.querySelector(".navbar__mobile-menu").classList.remove("navbar__mobile-menu--active");
         document.querySelector(".navbar__mobile-menu").classList.add("navbar__mobile-menu--inactive");
     }
+});
+
+
+//////////////////////// Testimonials Slider ////////////////////////
+document.addEventListener("DOMContentLoaded", function (e) {
+    new Splide('#testimonials_slider', {
+        type       : 'loop',
+        perPage    : 3,
+        perMove    : 1,
+        pagination : false,
+        breakpoints: {
+            990: {
+                perPage: 2,
+            },
+    
+            768: {
+                perPage: 1,
+            }
+        }
+    }).mount();
 });
