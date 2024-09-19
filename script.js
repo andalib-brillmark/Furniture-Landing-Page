@@ -39,8 +39,14 @@ window.addEventListener("resize", function (e) {
 });
 
 
-//////////////////////// Testimonials Slider ////////////////////////
+////////////////////// Product Select //////////////////////////
+document.querySelector('.best-selling__input').addEventListener('change', function(e) {
+    console.log('changed');
+});
+
+
 document.addEventListener("DOMContentLoaded", function (e) {
+    /////////////// Testimonials Slider ///////////////////////
     new Splide('#testimonials_slider', {
         type       : 'loop',
         perPage    : 3,
@@ -53,6 +59,23 @@ document.addEventListener("DOMContentLoaded", function (e) {
     
             768: {
                 perPage: 1,
+            }
+        }
+    }).mount();
+
+    //////////////////////// Best Products Slider //////////////////////////
+    new Splide('#products_slider', {
+        type       : 'loop',
+        perPage    : 4,
+        perMove    : 1,
+        pagination : false,
+        breakpoints: {
+            990: {
+                perPage: 2,
+            },
+    
+            768: {
+                perPage: 2,
             }
         }
     }).mount();

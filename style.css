@@ -1,4 +1,10 @@
+/********** DM Sans **********/
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/********** Inter **********/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /***************************** General *************************************/
 * 
@@ -466,13 +472,169 @@ header
     }
 }
 
+/********** Best Selling Products ********/
+
+.best-selling
+{
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(247, 247, 247, 1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-selling__heading
+{
+    font-size: 42px;
+    line-height: 49.22px;
+    text-align: left;
+    color: rgba(30, 30, 30, 1);
+}
+
+.best-selling__slider
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.best-selling__container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.best-selling__picture-container
+{
+    
+}
+
+.best-selling__picture--main
+{
+    width: 100%;
+    filter: drop-shadow(0px 5px 5px gray);
+}
+
+.best-selling__content-container
+{
+    text-align: left;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+}
+
+.best-selling__content--title
+{
+    font-family: "Inter", sans-serif;
+    font-size: 16.76px;
+    font-weight: 400;
+    line-height: 20.28px;
+    text-align: left;
+    color: rgba(141, 141, 141, 1);
+}
+
+.best-selling__content--name
+{
+    font-family: "Inter", sans-serif;
+    font-size: 21.33px;
+    font-weight: 600;
+    line-height: 25.81px;
+    text-align: left;
+    color: rgba(13, 27, 57, 1);
+}
+
+.best-selling__content--price
+{
+    font-family: "Inter", sans-serif;
+    font-size: 21.33px;
+    font-weight: 600;
+    line-height: 25.81px;
+    text-align: left;
+    color: rgba(13, 27, 57, 1);
+}
+
+/* Change display to flex when selected */
+.best-selling__chair
+{
+    display: flex;
+}
+
+.best-selling__bed
+{
+    display: none;
+}
+
+.best-selling__sofa
+{
+    display: none;
+}
+
+.best-selling__lamp
+{
+    display: none;
+}
+
+.best-selling__content-end
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.best-selling__content-end button
+{
+    background-color: rgba(13, 27, 57, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.best-selling__view-all p
+{
+    display: inline;
+    color: rgba(229, 132, 17, 1);
+    font-size: 18px;
+    line-height: 33.3px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 990px)
+{
+    .best-selling__heading
+    {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .best-selling
+    {
+        padding: 20px;
+    }
+
+    .best-selling__heading
+    {
+        font-size: 24px;
+    }
+}
+
 /******* Experiences ********/
 .experiences
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    padding: 100px 0;
 }
 
 .experiences__content
