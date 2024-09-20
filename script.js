@@ -69,6 +69,26 @@ document.querySelectorAll('.best-selling__input button').forEach((button) => {
             else
             {
                 slide[current].classList.remove('best-selling__inactive');
+                let id = `#bsp-slider${current + 1}`;
+                new Splide(id, {
+                    type       : 'loop',
+                    perPage    : 4,
+                    perMove    : 1,
+                    pagination : false,
+                    breakpoints: {
+                        1136: {
+                            perPage: 3,
+                        },
+                
+                        872: {
+                            perPage: 2,
+                        },
+            
+                        515: {
+                            perPage: 1,
+                        }
+                    }
+                }).mount();
             }
             console.log(slide[i]);
         }
@@ -77,7 +97,7 @@ document.querySelectorAll('.best-selling__input button').forEach((button) => {
     });
 }); 
 
-
+// When the page is loaded
 document.addEventListener("DOMContentLoaded", function (e) {
     /////////////// Testimonials Slider ///////////////////////
     new Splide('#testimonials_slider', {
@@ -98,66 +118,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     //////////////////////// Best Products Slider //////////////////////////
     new Splide('#bsp-slider1', {
-        type       : 'loop',
-        perPage    : 4,
-        perMove    : 1,
-        pagination : false,
-        breakpoints: {
-            1136: {
-                perPage: 3,
-            },
-    
-            872: {
-                perPage: 2,
-            },
-
-            515: {
-                perPage: 1,
-            }
-        }
-    }).mount();
-
-    new Splide('#bsp-slider2', {
-        type       : 'loop',
-        perPage    : 4,
-        perMove    : 1,
-        pagination : false,
-        breakpoints: {
-            1136: {
-                perPage: 3,
-            },
-    
-            872: {
-                perPage: 2,
-            },
-
-            515: {
-                perPage: 1,
-            }
-        }
-    }).mount();
-
-    new Splide('#bsp-slider3', {
-        type       : 'loop',
-        perPage    : 4,
-        perMove    : 1,
-        pagination : false,
-        breakpoints: {
-            1136: {
-                perPage: 3,
-            },
-    
-            872: {
-                perPage: 2,
-            },
-
-            515: {
-                perPage: 1,
-            }
-        }
-    }).mount();
-
-    new Splide('#bsp-slider4', {
         type       : 'loop',
         perPage    : 4,
         perMove    : 1,
