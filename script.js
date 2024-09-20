@@ -45,7 +45,7 @@ window.addEventListener("resize", function (e) {
 
 document.querySelectorAll('.best-selling__input button').forEach((button) => {
     button.addEventListener('click', function(e) {
-        let slide = document.querySelector('.best-selling__every-slider').children;
+        // let slide = document.querySelector('.best-selling__every-slider').children;
         // console.log(slide);
         
         let current = 0;
@@ -60,19 +60,19 @@ document.querySelectorAll('.best-selling__input button').forEach((button) => {
         }
 
         // console.log(slide[current]);
-        for(let i = 0; i < slide.length; i++)
-        {
-            if(i !== current)
-            {
-                slide[i].classList.add('best-selling__inactive');
-                slide[i].classList.remove('best-selling__full-container');
-            }
-            console.log(slide[i]);
-        }
+        // for(let i = 0; i < slide.length; i++)
+        // {
+        //     if(i !== current)
+        //     {
+        //         slide[i].classList.add('best-selling__inactive');
+        //         slide[i].classList.remove('best-selling__full-container');
+        //     }
+        //     console.log(slide[i]);
+        // }
 
         this.classList.add('best-selling__active');
-        slide[current].classList.remove('best-selling__inactive');
-        slide[current].classList.add('best-selling__full-container');
+        // slide[current].classList.remove('best-selling__inactive');
+        // slide[current].classList.add('best-selling__full-container');
         console.log(this.innerHTML);
     });
 }); 
