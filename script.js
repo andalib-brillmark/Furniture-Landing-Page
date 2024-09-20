@@ -45,8 +45,8 @@ window.addEventListener("resize", function (e) {
 
 document.querySelectorAll('.best-selling__input button').forEach((button) => {
     button.addEventListener('click', function(e) {
-        // let slide = document.querySelector('.best-selling__every-slider').children;
-        // console.log(slide);
+        let slide = document.querySelectorAll('.best-selling__slider');
+        console.log(slide);
         
         let current = 0;
         for(let i = 0; i < this.parentElement.children.length; i++)
@@ -59,20 +59,20 @@ document.querySelectorAll('.best-selling__input button').forEach((button) => {
             }
         }
 
-        // console.log(slide[current]);
-        // for(let i = 0; i < slide.length; i++)
-        // {
-        //     if(i !== current)
-        //     {
-        //         slide[i].classList.add('best-selling__inactive');
-        //         slide[i].classList.remove('best-selling__full-container');
-        //     }
-        //     console.log(slide[i]);
-        // }
+        this.classList.add('best-selling__active'); // Button active
+        for(let i = 0; i < slide.length; i++)
+        {
+            if(i !== current)
+            {
+                slide[i].classList.add('best-selling__inactive');
+            }
+            else
+            {
+                slide[current].classList.remove('best-selling__inactive');
+            }
+            console.log(slide[i]);
+        }
 
-        this.classList.add('best-selling__active');
-        // slide[current].classList.remove('best-selling__inactive');
-        // slide[current].classList.add('best-selling__full-container');
         console.log(this.innerHTML);
     });
 }); 
@@ -97,7 +97,67 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }).mount();
 
     //////////////////////// Best Products Slider //////////////////////////
-    new Splide('#products_slider', {
+    new Splide('#bsp-slider1', {
+        type       : 'loop',
+        perPage    : 4,
+        perMove    : 1,
+        pagination : false,
+        breakpoints: {
+            1136: {
+                perPage: 3,
+            },
+    
+            872: {
+                perPage: 2,
+            },
+
+            515: {
+                perPage: 1,
+            }
+        }
+    }).mount();
+
+    new Splide('#bsp-slider2', {
+        type       : 'loop',
+        perPage    : 4,
+        perMove    : 1,
+        pagination : false,
+        breakpoints: {
+            1136: {
+                perPage: 3,
+            },
+    
+            872: {
+                perPage: 2,
+            },
+
+            515: {
+                perPage: 1,
+            }
+        }
+    }).mount();
+
+    new Splide('#bsp-slider3', {
+        type       : 'loop',
+        perPage    : 4,
+        perMove    : 1,
+        pagination : false,
+        breakpoints: {
+            1136: {
+                perPage: 3,
+            },
+    
+            872: {
+                perPage: 2,
+            },
+
+            515: {
+                perPage: 1,
+            }
+        }
+    }).mount();
+
+    new Splide('#bsp-slider4', {
         type       : 'loop',
         perPage    : 4,
         perMove    : 1,
