@@ -130,29 +130,27 @@
             <h2 class="best-selling__heading">Best Selling Product</h2>
 
             <div class="best-selling__input">
-                <input type="radio" name="product_select" class="best-selling__button" value="chair" checked>
-                <label for="product_select">Chair</label>
-                <input type="radio" name="product_select" class="best-selling__button" value="bed">
-                <label for="product_select">Beds</label>
-                <input type="radio" name="product_select" class="best-selling__button" value="sofa">
-                <label for="product_select">Sofa</label>
-                <input type="radio" name="product_select" class="best-selling__button" value="lamp">
-                <label for="product_select">Lamp</label>
+                <button class="best-selling__button best-selling__active">Chair</button>
+                <button class="best-selling__button">Beds</button>
+                <button class="best-selling__button">Sofa</button>
+                <button class="best-selling__button">Lamp</button>
             </div>
 
+            <!-- Chair -->
             <div id="products_slider" class="best-selling__slider splide">
                 <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev">
+                    <button id="product__arrow" class="splide__arrow splide__arrow--prev">
                         <img src="images/left_arrow.png" alt="Left Arrow">
                     </button>
-                    <button class="splide__arrow splide__arrow--next">
+                    <button id="product__arrow" class="splide__arrow splide__arrow--next">
                         <img src="images/right_arrow.png" alt="Right Arrow">
                     </button>
                 </div>
 
                 <div class="splide__track">
                     <!-- For chair -->
-                    <div class="best-selling__chair splide__list">
+                    <div class="splide__list">
+                        <!-- Sakarias Chair -->
                         <div class="best-selling__container splide__slide">
                             <div class="best-selling__picture-container">
                                 <div class="best-selling__picture--bg"></div>
@@ -177,6 +175,7 @@
                             </div>
                         </div>
 
+                        <!-- Baltsar Chair -->
                         <div class="best-selling__container splide__slide">
                             <div class="best-selling__picture-container">
                                 <div class="best-selling__picture--bg"></div>
@@ -201,6 +200,7 @@
                             </div>
                         </div>
 
+                        <!-- Anjay Chair -->
                         <div class="best-selling__container splide__slide">
                             <div class="best-selling__picture-container">
                                 <div class="best-selling__picture--bg"></div>
@@ -225,6 +225,7 @@
                             </div>
                         </div>
 
+                        <!-- Nyantuy Chair -->
                         <div class="best-selling__container splide__slide">
                             <div class="best-selling__picture-container">
                                 <div class="best-selling__picture--bg"></div>
@@ -248,83 +249,311 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- When Selected chair -->
-                        <!-- <div class="best-selling__chair"> -->
-                            
-                        <!-- </div> -->
+
+                        <!-- Baltsar Bed -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/baltsar_chair.png" alt="Baltsar Chair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Bed</p>
+                                <p class="best-selling__content--name">Baltsar Bed</p>
+
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
+
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>299</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nyantuy Bed -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/nyantuy_chair.png" alt="Nyantuy Chair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Bed</p>
+                                <p class="best-selling__content--name">Nyantuy Bed</p>
+
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
+
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>921</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sakarias Bed -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/sakarias_armchair.png" alt="Sakarias Armchair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Bed</p>
+                                <p class="best-selling__content--name">Sakarias Bed</p>
+
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
+
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>392</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Anjay Bed -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/anjay_chair.png" alt="Anjay Chair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Bed</p>
+                                <p class="best-selling__content--name">Anjay Bed</p>
+
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
+
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>519</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nyantuy Sofa -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/nyantuy_chair.png" alt="Nyantuy Chair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Sofa</p>
+                                <p class="best-selling__content--name">Nyantuy Sofa</p>
+
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
+
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>921</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Anjay Sofa -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/anjay_chair.png" alt="Anjay Chair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Sofa</p>
+                                <p class="best-selling__content--name">Anjay Sofa</p>
+
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
+
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>519</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Baltsar Sofa -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/baltsar_chair.png" alt="Baltsar Chair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Sofa</p>
+                                <p class="best-selling__content--name">Baltsar Sofa</p>
+
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
+
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>299</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sakarias Sofa -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/sakarias_armchair.png" alt="Sakarias Armchair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Sofa</p>
+                                <p class="best-selling__content--name">Sakarias Sofa</p>
+
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
+
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>392</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+
                         
-                        <!-- When Selected bed -->
-                        <!-- <div class="best-selling__bed">
-                            <div class="best-selling__container splide__slide">
-                            
+                        <!-- Sakarias Lamp -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/sakarias_armchair.png" alt="Sakarias Armchair">
                             </div>
-    
-                            <div class="best-selling__container splide__slide">
-                                
-                            </div>
-    
-                            <div class="best-selling__container splide__slide">
-                                
-                            </div>
-    
-                            <div class="best-selling__container splide__slide">
-                                
-                            </div>
-                        </div> -->
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Lamp</p>
+                                <p class="best-selling__content--name">Sakarias Lamp</p>
 
-                        <!-- When selected sofa -->
-                        <!-- <div class="best-selling__sofa">
-                            <div class="best-selling__container splide__slide">
-                            
-                            </div>
-    
-                            <div class="best-selling__container splide__slide">
-                                
-                            </div>
-    
-                            <div class="best-selling__container splide__slide">
-                                
-                            </div>
-    
-                            <div class="best-selling__container splide__slide">
-                                
-                            </div>
-                        </div> -->
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
 
-                        <!-- When selected lamp -->
-                        <!-- <div class="best-selling__lamp">
-                            <div class="best-selling__container splide__slide">
-                            
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>392</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
                             </div>
-    
-                            <div class="best-selling__container splide__slide">
-                                
-                            </div>
-    
-                            <div class="best-selling__container splide__slide">
-                                
-                            </div>
-    
-                            <div class="best-selling__container splide__slide">
-                                
-                            </div>
-                        </div> -->
-                    </div>
+                        </div>
 
-                    <!-- For Bed -->
-                    <div class="best-selling__bed splide__list">
-                    </div>
+                        <!-- Anjay Lamp -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/anjay_chair.png" alt="Anjay Chair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Lamp</p>
+                                <p class="best-selling__content--name">Anjay Lamp</p>
 
-                    <!-- For Sofa -->
-                    <div class="best-selling__sofa splide__list">
-                    </div>
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
 
-                    <!-- For Lamp -->
-                    <div class="best-selling__lamp splide__list">
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>519</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Baltsar Lamp -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/baltsar_chair.png" alt="Baltsar Chair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Lamp</p>
+                                <p class="best-selling__content--name">Baltsar Lamp</p>
+
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
+
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>299</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nyantuy Lamp -->
+                        <div class="best-selling__container splide__slide">
+                            <div class="best-selling__picture-container">
+                                <div class="best-selling__picture--bg"></div>
+                                <img class="best-selling__picture--main" src="images/nyantuy_chair.png" alt="Nyantuy Chair">
+                            </div>
+                            <div class="best-selling__content-container">
+                                <p class="best-selling__content--title">Lamp</p>
+                                <p class="best-selling__content--name">Nyantuy Lamp</p>
+
+                                <div class="best-selling__content--rating">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                    <img src="images/product_full_star.png" alt="Full Star">
+                                </div>
+
+                                <div class="best-selling__content-end">
+                                    <p class="best-selling__content--price"><sup>$</sup>921</p>
+                                    <button><img src="images/add_button.png" alt="Add"></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            
             <div class="best-selling__view-all">
                 <p>View All</p>
                 <img src="images/orange_arrow.png" alt="Orange Arrow">
@@ -387,10 +616,10 @@
 
             <div id="testimonials_slider" class="testimonials__slider splide">
               <div class="splide__arrows">
-                <button class="splide__arrow splide__arrow--prev">
+                <button id="testimonial__arrow" class="splide__arrow splide__arrow--prev">
                     <img src="images/left_arrow.png" alt="Left Arrow">
                 </button>
-                <button class="splide__arrow splide__arrow--next">
+                <button id="testimonial__arrow" class="splide__arrow splide__arrow--next">
                     <img src="images/right_arrow.png" alt="Right Arrow">
                 </button>
               </div>

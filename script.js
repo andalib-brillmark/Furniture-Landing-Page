@@ -39,10 +39,43 @@ window.addEventListener("resize", function (e) {
 });
 
 
-////////////////////// Product Select //////////////////////////
-document.querySelector('.best-selling__input').addEventListener('change', function(e) {
-    console.log('changed');
-});
+////////////////////// Product Collection Select //////////////////////////
+// best-selling__active is for active button
+// best-selling__inactive is for hiding slide
+
+document.querySelectorAll('.best-selling__input button').forEach((button) => {
+    button.addEventListener('click', function(e) {
+        let slide = document.querySelector('.best-selling__every-slider').children;
+        // console.log(slide);
+        
+        let current = 0;
+        for(let i = 0; i < this.parentElement.children.length; i++)
+        {
+            this.parentElement.children[i].classList.remove('best-selling__active');
+
+            if(this.parentElement.children[i] == this)
+            {
+                current = i;
+            }
+        }
+
+        // console.log(slide[current]);
+        for(let i = 0; i < slide.length; i++)
+        {
+            if(i !== current)
+            {
+                slide[i].classList.add('best-selling__inactive');
+                slide[i].classList.remove('best-selling__full-container');
+            }
+            console.log(slide[i]);
+        }
+
+        this.classList.add('best-selling__active');
+        slide[current].classList.remove('best-selling__inactive');
+        slide[current].classList.add('best-selling__full-container');
+        console.log(this.innerHTML);
+    });
+}); 
 
 
 document.addEventListener("DOMContentLoaded", function (e) {
@@ -70,12 +103,16 @@ document.addEventListener("DOMContentLoaded", function (e) {
         perMove    : 1,
         pagination : false,
         breakpoints: {
-            990: {
-                perPage: 2,
+            1136: {
+                perPage: 3,
             },
     
-            768: {
+            872: {
                 perPage: 2,
+            },
+
+            515: {
+                perPage: 1,
             }
         }
     }).mount();
