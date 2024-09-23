@@ -19,7 +19,7 @@ document.querySelector('.navbar__mobile-button').addEventListener('click', funct
 /////////////// Window Resize ///////////////////////
 window.addEventListener("resize", function (e) {
     let width = window.innerWidth;
-    console.log(width);
+    // console.log(width);
 
     if(width >= 768)
     {
@@ -36,6 +36,18 @@ window.addEventListener("resize", function (e) {
         document.querySelector(".navbar__mobile-menu").classList.remove("navbar__mobile-menu--active");
         document.querySelector(".navbar__mobile-menu").classList.add("navbar__mobile-menu--inactive");
     }
+});
+
+
+//////////// Desktop Sub Menu /////////////////
+document.querySelector('.navbar__pc-menu--li').addEventListener('click', function(e) {
+    document.querySelector('.navbar__pc-submenu--ul').classList.toggle('navbar__pc-submenu--active');
+});
+
+/////////////// Mobile Sub Menu ///////////////////////
+document.querySelector('.navbar__mobile-menu--li').addEventListener('click', function(e) {
+    console.log('clicked');
+    document.querySelector('.navbar__mobile-submenu--ul').classList.toggle('navbar__mobile-submenu--active');
 });
 
 

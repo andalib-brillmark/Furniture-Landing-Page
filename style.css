@@ -40,7 +40,7 @@ header
     width: 100%;
 }
 
-.navbar__pc-menu ul
+.navbar__pc-menu--ul
 {
     display: flex;
     justify-content: space-between;
@@ -48,13 +48,13 @@ header
     padding: 20px 0;
 }
 
-.navbar__pc-menu ul li
+.navbar__pc-menu--li
 {
     list-style: none;
     padding: 0 20px;
 }
 
-.navbar__pc-menu ul li a
+.navbar__pc-menu--li a
 {
     font-size: 18px;
     text-decoration: none;
@@ -62,24 +62,38 @@ header
     margin: 0 15px;
 }
 
-.navbar__pc-menu ul li a img
+.navbar__pc-menu--li a img
 {
     padding: 0 10px;
 }
 
-.navbar__pc-sub-menu
+.navbar__pc-submenu--ul
 {
     display: none;
 }
 
-.navbar__pc-menu ul li:first-child:hover .navbar__pc-sub-menu
+.navbar__pc-submenu--active
 {
     display: block;
     position: absolute;
+    top: 85px;
     background-color: #f7f7f7;
+    color:rgba(30, 30, 30, 1);
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0px 5px 5px gray;
+}
+
+.navbar__pc-submenu--li
+{
+    display: inline;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.navbar__pc-submenu--li a
+{
+    text-decoration: none;
+    color: rgba(30, 30, 30, 1);
 }
 
 .navbar__shop a
@@ -149,22 +163,12 @@ header
     height: auto;
 }
 
-/* .navbar__menu-div--active
-{
-    display: block;
-}
-
-.navbar__menu-div--inactive
-{
-    display: none;
-} */
-
-.navbar__mobile-menu ul
+.navbar__mobile-menu--ul
 {
     background-color: #f7f7f7;
 }
 
-.navbar__mobile-menu ul li
+.navbar__mobile-menu--li
 {
     list-style: none;
     padding: 20px 0;
@@ -173,13 +177,39 @@ header
     margin: -1px 0 0 0;
 }
 
-.navbar__mobile-menu ul li a
+.navbar__mobile-menu--li a
 {
     font-size: 20px;
     color: #000000;
     font-weight: 900;
     text-decoration: none;
 }
+
+.navbar__mobile-submenu--ul
+{
+    display: none;
+}
+
+.navbar__mobile-submenu--active
+{
+    display: block;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 20px 0 0 0;
+}
+
+.navbar__mobile-submenu--li
+{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.navbar__mobile-submenu--li a
+{
+    text-decoration: none;
+    color: rgba(30, 30, 30, 1);
+}
+
 
 .navbar__shop a:hover, .navbar__mobile-menu ul li a:hover, .navbar__pc-menu ul li a:hover
 {
@@ -628,12 +658,6 @@ header
 {
     display: none;
 }
-/* 
-.best-selling__slider .splide__list.best-selling__active
-{
-    display: flex;
-    
-} */
 
 .best-selling__content-end
 {
@@ -858,7 +882,7 @@ header
 
     .experiences__content
     {
-        padding: 20px 40px;
+        padding: 30px 40px 20px 40px;
     }
 
     .experiences__content--main-text
