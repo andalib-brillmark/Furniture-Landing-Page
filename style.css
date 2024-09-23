@@ -38,6 +38,7 @@ header
     align-items: center;
     padding: 40px;
     width: 100%;
+    position: relative;
 }
 
 .navbar__pc-menu--ul
@@ -143,23 +144,21 @@ header
 {
     background-color: #f7f7f7;
     position: absolute;
-    z-index: 1;
-    top: -35px;
-    left: 5%;
-}
-
-.navbar__mobile-menu--inactive
-{
-    display: none;
-    width: 0;
-    height: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    opacity: 0;
+    transition: z-index 0.5s ease-in-out, bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    /*top: -35px;
+    left: 5%; */
 }
 
 .navbar__mobile-menu--active
 {    
-    display: block;
-    width: 90%;
-    height: auto;
+    /* bottom: -264px; */
+    opacity: 1;
+    z-index: 10;
 }
 
 .navbar__mobile-menu--ul

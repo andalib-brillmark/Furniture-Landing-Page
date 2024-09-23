@@ -4,17 +4,21 @@ let clickCount = 0;
 document.querySelector('.navbar__mobile-button').addEventListener('click', function() {
     console.log('clicked');
     clickCount++;
-    document.querySelector('.navbar__mobile-menu').classList.toggle('navbar__mobile-menu--active');
-    document.querySelector('.navbar__mobile-menu').classList.toggle('navbar__mobile-menu--inactive');
-});
 
-// jQuery
-// $(document).ready(function() {
-//     $('.navbar__mobile-button').click(function() {
-//         clickCount++;
-//         $('.navbar__menu-div').slideToggle(500);
-//     });
-// });
+    let element = document.querySelector('.navbar__mobile-menu');
+    let height = element.offsetHeight;
+    
+    if(clickCount % 2 == 1) // if the mobile view is active
+    {
+        element.style.bottom = "-" + height + 'px';
+    }
+    else
+    {
+        element.style.bottom = "0px";
+    }
+
+    document.querySelector('.navbar__mobile-menu').classList.toggle('navbar__mobile-menu--active');
+});
 
 /////////////// Window Resize ///////////////////////
 window.addEventListener("resize", function (e) {
@@ -24,17 +28,14 @@ window.addEventListener("resize", function (e) {
     if(width >= 768)
     {
         document.querySelector(".navbar__mobile-menu").classList.remove("navbar__mobile-menu--active");
-        document.querySelector(".navbar__mobile-menu").classList.add("navbar__mobile-menu--inactive");
     }
     else if(clickCount % 2 == 1) // if the mobile view was active
     {
-        document.querySelector(".navbar__mobile-menu").classList.remove("navbar__mobile-menu--inactive");
         document.querySelector(".navbar__mobile-menu").classList.add("navbar__mobile-menu--active");
     }
     else
     {
         document.querySelector(".navbar__mobile-menu").classList.remove("navbar__mobile-menu--active");
-        document.querySelector(".navbar__mobile-menu").classList.add("navbar__mobile-menu--inactive");
     }
 });
 
