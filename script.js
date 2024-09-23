@@ -46,9 +46,25 @@ document.querySelector('.navbar__pc-menu--li').addEventListener('click', functio
 });
 
 /////////////// Mobile Sub Menu ///////////////////////
+let subMenuClickCount = 0;
 document.querySelector('.navbar__mobile-menu--li').addEventListener('click', function(e) {
     console.log('clicked');
-    document.querySelector('.navbar__mobile-submenu--ul').classList.toggle('navbar__mobile-submenu--active');
+    
+    subMenuClickCount++;
+    if(subMenuClickCount % 2 == 1) // if submenu is being activated
+    {
+        document.querySelector('.navbar__mobile-submenu--ul').classList.toggle('navbar__mobile-submenu--active');
+        let element = document.querySelector('.navbar__mobile-menu');
+        element.style.bottom = "-" + element.offsetHeight + 'px';
+    }
+    else
+    {
+        let element = document.querySelector('.navbar__mobile-menu');
+        let height = element.offsetHeight;
+        let subMenuHeight = document.querySelector('.navbar__mobile-submenu--ul').offsetHeight;
+        element.style.bottom = "-" + (height - subMenuHeight) + 'px';
+        document.querySelector('.navbar__mobile-submenu--ul').classList.toggle('navbar__mobile-submenu--active');
+    }
 });
 
 
