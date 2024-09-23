@@ -67,6 +67,21 @@ header
     padding: 0 10px;
 }
 
+.navbar__pc-sub-menu
+{
+    display: none;
+}
+
+.navbar__pc-menu ul li:first-child:hover .navbar__pc-sub-menu
+{
+    display: block;
+    position: absolute;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px gray;
+}
+
 .navbar__shop a
 {
     font-size: 28px;
@@ -841,6 +856,11 @@ header
         width: 100%;
     }
 
+    .experiences__content
+    {
+        padding: 20px 40px;
+    }
+
     .experiences__content--main-text
     {
         font-size: 24px;
@@ -977,6 +997,7 @@ header
     .materials__content
     {
         width: 100%;
+        padding: 20px 40px;
     }
 
     .materials__content--main-text
@@ -1026,9 +1047,6 @@ header
 
 .testimonials__slider
 {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     width: 100%;
 }
 
@@ -1315,7 +1333,7 @@ footer
     .footer__extra
     {
         flex-direction: column;
-        padding: 20px 0;
+        padding: 0;
     }
 
     .footer__extra--conditions
@@ -1341,6 +1359,11 @@ footer
 
 @media screen and (max-width: 768px)
 {
+    .footer__main-content p
+    {
+        padding: 20px 0;
+    }
+
     .footer__sub-content
     {
         padding: 20px 0;
