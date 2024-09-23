@@ -465,6 +465,7 @@ header
     {
         width: 100%;
         padding: 20px;
+        text-align: center;
     }
 
     .choosing-us__content--heading
@@ -1284,6 +1285,11 @@ footer
     text-align: left;
     padding: 0 20px;
     color: rgba(30, 30, 30, 1);
+}
+
+.footer__sub-content ul li a:hover
+{
+    color: #E58411;
 }
 
 @media screen and (max-width: 990px)
